@@ -19,7 +19,7 @@ body{
   transform: translate(-50%,-50%);
   max-width: 430px;
   width: 100%;
-  background: rgb(22, 22, 22);
+  background: rgb(133, 133, 133);
   border-radius: 7px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.3);
 }
@@ -64,6 +64,9 @@ body{
 }
 .form a:hover{
   text-decoration: underline;
+}
+.form input{
+  color: black;
 }
 .form input.button{
   color: #fff;
