@@ -22,18 +22,6 @@ body{
   border-radius: 7px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.3);
 }
-.container .registration{
-  display: none;
-}
-#check:checked ~ .registration{
-  display: block;
-}
-#check:checked ~ .login{
-  display: none;
-}
-#check{
-  display: none;
-}
 .container .form{
   padding: 2rem;
 }
@@ -87,5 +75,37 @@ body{
 }
 .signup label:hover{
   text-decoration: underline;
+}
+
+.input-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-control input {
+  border: 2px solid #f0f0f0;
+border-radius: 4px;
+display: block;
+font-size: 17px;
+padding: 10px;
+width: 100%;
+}
+
+.input-control input:focus {
+  outline: 0;
+}
+
+.input-control.success input {
+  border-color: #09c372;
+}
+
+.input-control.error input {
+  border-color: #ff3860;
+}
+
+.input-control .error {
+  color: #ff3860;
+  font-size: 9px;
+  height: 13px;
 }
 
