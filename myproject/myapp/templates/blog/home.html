@@ -8,6 +8,8 @@
     {% else %}
         <title>Django Blog</title>
     {% endif %}
+    {% load static %}
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     {% for post in posts %}
