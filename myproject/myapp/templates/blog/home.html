@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,10 +13,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+=======
+{% extends "blog/base.html"%}
+{% block content %}
+>>>>>>> Stashed changes
     {% for post in posts %}
         <h1>{{ post.title }}</h1>
         <p>By {{ post.author }} on {{ post.date_posted }}</p>
         <p>{{ post.content }}</p>
     {% endfor %}
-</body>
-</html>
+{% endblock content %}
