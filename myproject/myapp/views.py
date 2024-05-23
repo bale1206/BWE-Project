@@ -8,7 +8,7 @@ def index(request):
 
 def explorer(request):
     context = {}
-    return render(request, 'pages/explorer.html',context)
+    return render(request, 'pages/explorer.html', context)
 
 def login(request):
     context = {}
@@ -20,9 +20,10 @@ def profile(request):
 
 def register(request):
     context = {}
-    return render(request, 'pages/register.html',context)
+    return render(request, 'pages/register.html', context)
 
 def shoppingcart(request):
     context = {}
     return render(request, 'pages/shoppingcart.html', context)
+
 
