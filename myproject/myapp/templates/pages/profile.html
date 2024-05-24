@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BWE · Meet & Play</title>
+    {% load static %}
     <link rel="icon" type="image/x-icon" href="../../static/assets/logoRosa.png">
     <link rel="stylesheet" href="../../static/css/style.css">
     <link rel="stylesheet" href="../../static/css/profile-style.css">
@@ -19,17 +20,17 @@
 
 <body class="body-main">
     <div class="navbar-main">
-        <div class="logo"><a href="index.html" class="index-link"><img src="../../static/assets/logoBlancoNegro.png" alt="logo" height="60px">BWE</a></div>
+        <div class="logo"><a href="{% url 'index' %}" class="index-link"><img src="../../static/assets/logoBlancoNegro.png" alt="logo" height="60px">BWE</a></div>
         <div class="acnt">
-            <div class="item inic"><a href="./index.html" class="index-link ses">Inicia Sesión</a></div>
-            <div class="item crea"><a href="./index.html" class="index-link ses">Crear cuenta</a></div>
+            <div class="item inic"><a href="{% url 'login' %}" class="index-link ses">Inicia Sesión</a></div>
+            <div class="item crea"><a href="{% url 'register' %}" class="index-link ses">Crear cuenta</a></div>
         </div>
     </div>
     
     <div class="bottom-bar">
-        <div><a href="./index.html"><img src="../../static/assets/casa.png" alt="" width="30px"></a></div>
-        <div><a href="./explorer.html"><img src="../../static/assets/explorador.png" alt="" width="30px"></a></div>
-        <div><a href="./shoppingcart.html"><img src="../../static/assets/carro-de-la-carretilla.png" alt="" width="30px"></a></div>
+        <div><a href="{% url 'index' %}"><img src="../../static/assets/casa.png" alt="" width="30px"></a></div>
+        <div><a href="{% url 'explorer' %}"><img src="../../static/assets/explorador.png" alt="" width="30px"></a></div>
+        <div><a href="{% url 'shoppingcart' %}"><img src="../../static/assets/carro-de-la-carretilla.png" alt="" width="30px"></a></div>
     </div>
     <div class="main-image"><div class="band-name">NewJeans</div> </div>
     <div class="contianer profile">

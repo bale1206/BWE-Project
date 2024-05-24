@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BWE · Meet & Play</title>
+    {% load static %}
     <link rel="icon" type="image/x-icon" href="../../static/assets/logoRosa.png">
     <link rel="stylesheet" href="../../static/css/style.css">
     <link rel="stylesheet" href="../../static/css/explorer-style.css">
@@ -19,24 +20,24 @@
 
 <body class="body-main">
     <div class="navbar-main">
-        <div class="logo"><a href="index.html" class="index-link"><img src="../../static/assets/logoBlancoNegro.png" alt="logo"
+        <div class="logo"><a href="{% url 'index' %}" class="index-link"><img src="../../static/assets/logoBlancoNegro.png" alt="logo"
                     height="60px">BWE</a></div>
         <div class="acnt">
-            <div class="item inic"><a href="login.html" class="index-link ses">Iniciar Sesión</a></div>
-            <div class="item crea"><a href="register.html" class="index-link ses">Crear cuenta</a></div>
+            <div class="item inic"><a href="{% url 'login' %}" class="index-link ses">Iniciar Sesión</a></div>
+            <div class="item crea"><a href="{% url 'register' %}" class="index-link ses">Crear cuenta</a></div>
         </div>
     </div>
 
     <div class="lateral-bar">
-        <div><a href="./index.html"><img src="../../static/assets/casa.png" alt="" width="30px"></a></div>
-        <div><a href="./explorer.html"><img src="../../static/assets/explorador.png" alt="" width="30px"></a></div>
-        <div><a href="./shoppingcart.html"><img src="../../static/assets/carro-de-la-carretilla.png" alt="" width="30px"></a></div>
+        <div><a href="{% url 'index' %}"><img src="../../static/assets/casa.png" alt="" width="30px"></a></div>
+        <div><a href="{% url 'explorer' %}"><img src="../../static/assets/explorador.png" alt="" width="30px"></a></div>
+        <div><a href="{% url 'shoppingcart' %}"><img src="../../static/assets/carro-de-la-carretilla.png" alt="" width="30px"></a></div>
     </div>
 
     <div class="bottom-bar">
-        <div><a href="./index.html"><img src="../../static/assets/casa.png" alt="" width="30px"></a></div>
-        <div><a href="./explorer.html"><img src="../../static/assets/explorador.png" alt="" width="30px"></a></div>
-        <div><a href="./shoppingcart.html"><img src="../../static/assets/carro-de-la-carretilla.png" alt="" width="30px"></a></div>
+        <div><a href="{% url 'index' %}"><img src="../../static/assets/casa.png" alt="" width="30px"></a></div>
+        <div><a href="{% url 'explorer' %}"><img src="../../static/assets/explorador.png" alt="" width="30px"></a></div>
+        <div><a href="{% url 'shoppingcart' %}"><img src="../../static/assets/carro-de-la-carretilla.png" alt="" width="30px"></a></div>
     </div>
     <div class="container main">
         <div class="head-page">
@@ -47,17 +48,17 @@
         <label><input type="text" id="Name" name="Name" /><img src="../../static/assets/filtrar.png" alt="" width="40px"></label>
 
         <div class="artist-list">
-            <div class="artist-item"><a href="./profile.html" class="artist-page"><img src="../../static/assets/12f3bf460dd6783e8d07769579eb2918.jpg" alt="" class="artist-img">New Jeans</a></div>
+            <div class="artist-item"><a href="{% url 'profile' %}" class="artist-page"><img src="../../static/assets/12f3bf460dd6783e8d07769579eb2918.jpg" alt="" class="artist-img">New Jeans</a></div>
             <div class="artist-item"><a href=".." class="artist-page"><img src="../../static/assets/eve.jpg" alt="" class="artist-img">Eve</a></div>
             <div class="artist-item"><a href=".." class="artist-page"><img src="../../static/assets/jereKlein.jpg" alt="" class="artist-img">Jere Klein</a></div>
             <div class="artist-item"><a href=".." class="artist-page"><img src="../../static/assets/plini.jpg" alt="" class="artist-img">Plini</a></div>
             <div class="artist-item"><a href=".." class="artist-page"><img src="../../static/assets/theWeekend.jpg" alt="" class="artist-img">The Weekend</a></div>
-            <div class="artist-item"><a href=".." class="artist-page"><img src="../../static/assets/12f3bf460dd6783e8d07769579eb2918.jpg" alt="" class="artist-img">New Jeans</a></div>
+            <div class="artist-item"><a href="{% url 'profile' %}" class="artist-page"><img src="../../static/assets/12f3bf460dd6783e8d07769579eb2918.jpg" alt="" class="artist-img">New Jeans</a></div>
             <div class="artist-item"><a href=".." class="artist-page"><img src="../../static/assets/eve.jpg" alt="" class="artist-img">Eve</a></div>
             <div class="artist-item"><a href=".." class="artist-page"><img src="../../static/assets/jereKlein.jpg" alt="" class="artist-img">Jere Klein</a></div>
             <div class="artist-item"><a href=".." class="artist-page"><img src="../../static/assets/plini.jpg" alt="" class="artist-img">Plini</a></div>
             <div class="artist-item"><a href=".." class="artist-page"><img src="../../static/assets/theWeekend.jpg" alt="" class="artist-img">The Weekend</a></div>
-            <div class="artist-item"><a href=".." class="artist-page"><img src="../../static/assets/12f3bf460dd6783e8d07769579eb2918.jpg" alt="" class="artist-img">New Jeans</a></div>
+            <div class="artist-item"><a href="{% url 'profile' %}" class="artist-page"><img src="../../static/assets/12f3bf460dd6783e8d07769579eb2918.jpg" alt="" class="artist-img">New Jeans</a></div>
             <div class="artist-item"><a href=".." class="artist-page"><img src="../../static/assets/eve.jpg" alt="" class="artist-img">Eve</a></div>
             <div class="artist-item"><a href=".." class="artist-page"><img src="../../static/assets/jereKlein.jpg" alt="" class="artist-img">Jere Klein</a></div>
             <div class="artist-item"><a href=".." class="artist-page"><img src="../../static/assets/plini.jpg" alt="" class="artist-img">Plini</a></div>
