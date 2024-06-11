@@ -41,7 +41,9 @@
     <div class="container">
         <div class="signup form">
             <header>Crea una cuenta</header>
-            <form id="form" action="/">
+            <form id="form" action="/" method="post">
+                {% csrf_token %}
+                
                 <div class="input-control">
                     <input id="email" name="email" type="text" placeholder="Ingresa tu correo electronico"
                     style="color: black;">
@@ -56,6 +58,10 @@
                     <input id="password2" name="password2" type="password" placeholder="Ingresa tu contrasena" style="color: black;">
                     <div class="error"></div>
                 </div>
+                    <small class="text-muted">
+                        Ya tienes una cuenta? <a class="ml-2"href="{% url 'login' %}">Inicia sesion</a>
+                    </small>
+                
                 <input type="submit" class="button" value="Registrarse">
             </form>
         </div>

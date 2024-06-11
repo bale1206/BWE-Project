@@ -83,12 +83,20 @@ body{
 }
 
 .input-control input {
-  border: 2px solid #f0f0f0;
+border: 2px solid #f0f0f0;
 border-radius: 4px;
 display: block;
 font-size: 17px;
 padding: 10px;
 width: 100%;
+}
+
+.input-date input{
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  padding: 10px;
+  width: 25%;
 }
 
 .input-control input:focus {
