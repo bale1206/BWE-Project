@@ -38,12 +38,20 @@
         <div><a href="{% url 'shoppingcart' %}"><img src="../../static/assets/carro-de-la-carretilla.png" alt="" width="30px"></a></div>
     </div>
 
+    
+
     <div class="container">
         <div class="signup form">
             <header>Crea una cuenta</header>
-            <form id="form" action="/" method="post">
+            {% if messages %}
+                <ul class="messages">
+                    {% for message in messages %}
+                        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+            <form id="form" action="{% url 'register' %}" method="post">
                 {% csrf_token %}
-                
                 <div class="input-control">
                     <input id="email" name="email" type="text" placeholder="Ingresa tu correo electronico"
                     style="color: black;">
@@ -61,7 +69,13 @@
                     <small class="text-muted custom-text-color">
                         Ya tienes una cuenta? <a class="ml-2"href="{% url 'login' %}">Inicia sesion</a>
                     </small>
-                
+                    {% if messages %}
+                    <ul class="messages">
+                        {% for message in messages %}
+                            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
                 <input type="submit" class="button" value="Registrarse">
             </form>
         </div>
