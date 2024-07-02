@@ -34,3 +34,7 @@ def register(request):
 def shoppingcart(request):
     context = {}
     return render(request,'pages/shoppingcart.html', context)
+
+def plans(request):
+    context = {}
+    return render(request, 'pages/plans.html', context)
